@@ -1,21 +1,18 @@
 <template>
   <header>
-    <img src="~/assets/img/example_logo.png" alt="logo" width="120px">
+    <nuxt-link to="">
+      <img src="~/assets/img/logo.svg" alt="logo" width="120px">
+    </nuxt-link>
     <ul>
       <li>
-        <nuxt-link to="">
-          Home
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="">
+        <a href="/#about">
           About
-        </nuxt-link>
+        </a>
       </li>
       <li>
-        <nuxt-link to="">
+        <a href="/#join">
           Join
-        </nuxt-link>
+        </a>
       </li>
     </ul>
   </header>
@@ -29,21 +26,36 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  // background: linear-gradient(30deg, #123, #456, #789);
-  background: #323b4e;
+  background: transparent;
   color: #f8f9fa;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: .75rem 1rem;
+  padding: 1rem 1.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  a {
+    transition: ease .2s;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
 
   ul {
     display: flex;
     flex-direction: row;
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
 
-    li:not(:last-child) {
-      padding: 0 1rem 0 0;
+    li {
+      &:not(:last-child) {
+        padding: 0 1.5rem 0 0;
+      }
     }
   }
 }

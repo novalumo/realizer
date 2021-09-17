@@ -2,9 +2,28 @@
 <template>
   <footer>
     <ul>
-      <li>Home</li>
+      <li>
+        <nuxt-link to="">
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="">
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="">
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="">
+          Home
+        </nuxt-link>
+      </li>
     </ul>
-    <p>&copy; 2020 Novalumo Japan G.K.</p>
+    <p class="text-sm mt-5">&copy; 2020 Realizer</p>
   </footer>
 </template>
 
@@ -16,7 +35,19 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  // background: #000;
-  border-top: solid 1px #333;
+  border-top: solid 1px #ccc;
+  color: #777;
+  padding: 3rem;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      &:not(:last-child) {
+        padding: 0 1rem 0 0;
+      }
+    }
+  }
 }
 </style>
