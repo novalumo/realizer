@@ -1,8 +1,6 @@
 <template>
   <header>
-    <nuxt-link to="">
-      <img src="~/assets/img/logo.svg" alt="logo" width="120px">
-    </nuxt-link>
+    <img src="~/assets/img/logo.svg" alt="logo" class="logo">
     <ul>
       <li>
         <a href="/#about">
@@ -38,6 +36,10 @@ header {
   width: 100%;
   z-index: 10;
 
+  .logo {
+    width: 120px;
+  }
+
   a {
     transition: ease .2s;
 
@@ -49,7 +51,7 @@ header {
   ul {
     display: flex;
     flex-direction: row;
-    font-size: 1.25rem;
+    font-weight: bold;
     letter-spacing: .1rem;
 
     li {

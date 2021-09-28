@@ -3,27 +3,22 @@
   <footer>
     <ul>
       <li>
-        <nuxt-link to="">
-          Home
-        </nuxt-link>
+        <a href="/#about">
+          About
+        </a>
       </li>
       <li>
-        <nuxt-link to="">
-          Home
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="">
-          Home
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="">
-          Home
-        </nuxt-link>
+        <a href="/#join">
+          Join
+        </a>
       </li>
     </ul>
-    <p class="text-sm mt-5">&copy; 2020 Realizer</p>
+    <p class="text-sm mt-5">
+      &copy; 2020 Realizer
+    </p>
+    <p class="text-xs opacity-50 mt-1">
+      Promoter: Novalumo Japan G.K.
+    </p>
   </footer>
 </template>
 
@@ -35,9 +30,10 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  border-top: solid 1px #ccc;
-  color: #777;
+  background: #000;
+  color: #eee;
   padding: 3rem;
+  font-weight: bold;
 
   ul {
     display: flex;
@@ -46,6 +42,14 @@ footer {
     li {
       &:not(:last-child) {
         padding: 0 1rem 0 0;
+      }
+
+      a {
+        transition: ease .2s;
+
+        &:hover {
+          opacity: .7;
+        }
       }
     }
   }
