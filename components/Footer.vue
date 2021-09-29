@@ -19,6 +19,9 @@
     <p class="text-xs opacity-50 mt-1">
       Promoter: Novalumo Japan G.K.
     </p>
+    <p class="text-xs opacity-50">
+      Admins: Novalumo Japan G.K., ...
+    </p>
   </footer>
 </template>
 

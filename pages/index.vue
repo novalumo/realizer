@@ -2,15 +2,15 @@
   <div>
     <!-- hero -->
     <section class="hero">
-      <h1>
+      <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-7xl">
         <span class="inline-block">“実現”する</span><br><span class="inline-block">起業家の</span><span class="inline-block">コミュニティー</span>
       </h1>
       <div class="flex flex-row">
         <a href="#about" class="btn">
-          <span class="text-xl mr-2">?</span>Realizerとは
+          Realizerとは
         </a>
         <a href="#join" class="btn">
-          <span class="text-xl mr-2">+</span>参加する
+          参加する
         </a>
       </div>
     </section>
@@ -23,7 +23,7 @@
           Realizerとは?
         </h2>
         <p class="text-lg">
-          起業家同士の繋がりを深め、お互いにシナジーを生み出すことができるようなコミュニティを目指して立ち上げられたグループです。宣伝や事業紹介、経営などについてわからないことがあれば相談などができる場です。
+          起業家同士のつながりを深め、お互いにシナジーを生み出すことができるようなコミュニティを目指して立ち上げられたグループです。宣伝や事業紹介、経営などについてわからないことがあれば相談などができる場です。
         </p>
       </div>
       <div>
@@ -32,9 +32,11 @@
         >
           参加事業者
         </h2>
-        <p>
-          <ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社 代表社員 CEO 白澤賢斗
-        </p>
+        <section class="bizs">
+          <p>
+            <span><ruby>Novalumo<rt>ノバルーモ</rt></ruby>合同会社</span> <span>代表社員 CEO 白澤賢斗</span>
+          </p>
+        </section>
       </div>
     </section>
     <!-- join -->
@@ -95,7 +97,6 @@ export default {
 
   h1 {
     color: #fff;
-    font-size: 3.5rem;
     margin: 0 0 1.75rem 0;
     text-align: center;
     line-height: 1.1;
@@ -141,6 +142,13 @@ export default {
     padding: 1rem 1.25rem;
     display: inline-block;
     font-weight: bold;
+  }
+}
+
+.bizs {
+  /* no break on span */
+  span {
+    display: inline-block;
   }
 }
 </style>
